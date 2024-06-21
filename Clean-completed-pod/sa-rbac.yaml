@@ -24,7 +24,7 @@ metadata:
 subjects:
   - kind: ServiceAccount
     name: completed-pod-cleanup
-    namespace: clean-completed-pods
+    namespace: clean-completed-pod
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

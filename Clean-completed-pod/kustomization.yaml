@@ -2,5 +2,6 @@ namespace: clean-completed-pods
 
 resources:
   - namespace.yaml
-  - clean-completed-pod-cron.yaml
-  - sa-rbac.yaml
+  - completed-pod-cleanup-cron.yaml
+  - sa.yaml
+  - clusterrolebinding.yaml

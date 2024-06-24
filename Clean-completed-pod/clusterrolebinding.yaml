@@ -1,0 +1,14 @@
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: completed-pod-cleanup
+  labels:
+    app: completed-pod-cleanup
+subjects:
+  - kind: ServiceAccount
+    name: completed-pod-cleanup
+    namespace: ocp-completed-pod-cleanup
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-completed-pod-cleanup
